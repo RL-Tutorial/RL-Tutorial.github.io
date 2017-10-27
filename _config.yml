@@ -1,0 +1,15 @@
+title: Reinforcement Learning Tutorial
+description: (Deep) reinforcement learning tutorials & practicals for beginners
+show_downloads: true
+
+baseurl: 
+url: "https://RL-Tutorial.github.io" # change this to the base hostname & protocol for your site
+cayman-blog:
+  date_format: "%b %-d, %Y"
+
+theme: # leave it empty
+
+# social
+author: "RL-boys"
+image: /thumbnail-jumbo.png
+#  admins:
