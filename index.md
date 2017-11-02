@@ -27,7 +27,10 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
         - [PyTorchZeroToAll][14] 
     - [Keras][15] 
 
-若本系列文章不符合您的味口，您还可学习如下 强化学习 的相关教程：
+若您没有任何机器学习(深度学习)的基础，我们希望您先花一点时间学习相关的课程(书籍)。   
+若您没有接触过上述深度学习框架，我们也希望您先花一些时间来学习它。   
+上面我们已经给出了适合您学习的机器学习/深度学习/主流框架教程。  
+若本系列文章不符合您的味口，您还可学习如下 强化学习 的相关教程：  
 
 - [Dave Silver: Reinforcement Learning][16]
 - [Dave Silver —— Tutorial: Deep Reinforcement Learning][17]
@@ -37,10 +40,64 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
 - [Flood Sung: 智能单元][21]
 - [MILA: Reinforcement Learning Summer School][22] 「[zhihu][23]」
  
-如果您有任何建议及意见，或是您希望加入本系列教程的撰写，请联系我们！
-
 
 ## Coverage:
+
+我们希望通过概念的讲解，论文的讲解，实际案例讲解三种方式来完成本系列文章。  
+对于经典的算法(如DQN,A2C,A3C)，我们会详细介绍其原理以及一些实际的Demo(如 Flappy bird, Atari game)等等。对于与RL或者DRL相关的package(如openai-gym)等，我们也会进行相应的讲解。  
+
+整个系列分为 强化学习 和 深度强化学习 两个部分。  
+强化学习的部分我们会从最基本的概念开始，包括什么是RL，MDP,到MC方法，TD learning, Q learning。同时我们也会讲解 MCTS以及详尽介绍AlphaGo Zero。
+进入深度强化学习部分后，我们将会着重在论文的分析以及实践上。我们会介绍自2013年DeepMind发布DQN以来至现在的所有经典算法和架构，并通过大量的Demo来进行实例讲解。当然，您也可以跳过强化学习的部分，直接从深度强化学习的部分开始学习。
+
+### Reinforcement Learning Part:
+
+ - [Introduction to Reinforcement Learning (强化学习简介)][24]
+ - Markov decision process (马尔科夫过程)
+ - Model-free Reinforcement Learning (模型无关的强化学习)
+ - Integrating Learning and Planning
+ - Policy Gradient
+ - Exploration and Exploitation
+
+### Deep Reinforcement Learning Part:
+
+- Deep Q Network 
+    - Playing Atari with Deep Reinforcement Learning
+    - Human-level control through deep reinforcement learning
+    - Demo 1 : Flappy Bird
+    - Tutorial : OpenAI-gym tutorial
+    - Demo 2 : Atari Game
+- Introduction to AlphaGO Zero
+    - Monte Carlo tree search
+    - Mastering the game of Go without human knowledge
+- Double DQN 
+    - Deep Reinforcement Learning with Double Q-learning
+    - Demo 1 : Flappy Bird
+- Other improvements:
+    - Prioritized Prioritized Experience Replay
+    - Dueling Network Architectures for Deep Reinforcement Learning
+    - Demo 1 : Flappy Bird
+    - Demo 2 : Atari Game
+- Deep Deterministic Policy Gradient
+    - Deterministic Policy Gradient Algorithms
+    - Continuous control with deep reinforcement learning
+    - Demo 1 : OpenAI games
+- A3C(A2C)
+    - Asynchronous Methods for Deep Reinforcement Learning
+    - Demo 1 : OpenAI games
+- ACER
+    - Sample Efficient Actor-Critic with Experience Replay
+    - Demo 1: OpenAI games
+- ACKTR
+    - Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation
+- Trust Region Policy Optimization
+- Distributed Proximal Policy Optimization
+    - Proximal Policy Optimization Algorithms
+    - Emergence of Locomotion Behaviours in Rich Environments
+- Rainbow
+    - Rainbow: Combining Improvements in Deep Reinforcement Learning
+
+如果您发现任何错误，或是有任何建议及意见，亦或是您希望加入本系列文章的撰写，请联系 [我们][25] ！
 
 
   [1]: http://cs229.stanford.edu/
@@ -66,3 +123,5 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
   [21]: https://zhuanlan.zhihu.com/intelligentunit
   [22]: https://mila.quebec/en/cours/deep-learning-summer-school-2017/
   [23]: https://zhuanlan.zhihu.com/p/28922147
+  [24]: https://rl-tutorial.github.io/2017/11/02/intro-to-rl.html
+  [25]: https://zhuanlan.zhihu.com/rl-tutorial
