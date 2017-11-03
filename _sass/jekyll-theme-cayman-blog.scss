@@ -145,7 +145,7 @@ a {
   margin-bottom: 0rem;
   font-weight: normal;
   opacity: 0.7;
-  font-style: italic;
+  font-style: inherit;
 
   @include large {
     font-size: 1.0rem;
@@ -162,6 +162,7 @@ a {
 
 .main-content {
   word-wrap: break-word;
+  line-height: 1.7;
 
   :first-child {
     margin-top: 0;
@@ -171,12 +172,12 @@ a {
     max-width: 65rem;
     padding: 3rem 6rem;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   @include medium {
     padding: 3rem 4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   @include small {
