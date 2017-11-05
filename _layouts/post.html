@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<aside class="post-widget"></aside>
+<article itemscope itemtype="http://schema.org/BlogPosting" class="post-article">
 
   <!-- <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -22,4 +23,65 @@ layout: default
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+  <script type="text/javascript">
+    var $document = $(document);
+    var $mainContent = $(".main-content");
+    var $article = $("article");
+    var $aside = $("aside");
+    var $toc = $("#markdown-toc");
+    var init_top = 11;
+
+    function set_toc_position(){
+      var head_height = $(".page-header").outerHeight() + $(".site-header").outerHeight();
+      if ($document.scrollTop() < head_height)
+        $toc.css("top", head_height - $document.scrollTop() + init_top + "px");
+      else
+        $toc.css("top", init_top + "px");
+    }
+
+    $(window).resize(function(){
+      set_toc_position();
+    });
+
+    $document.ready(function(){
+      // jekyll生成的目录似乎只能写在正文里面
+      $toc.remove();
+      $aside.append($toc);
+
+      set_toc_position();
+    });
+
+    $document.scroll(function(){
+      set_toc_position();
+        //console.log($("#markdown-toc").css("top"));
+    })
+
+    // var init_top;
+    // $(document).ready(function(){
+    //   init_top = document.getElementById("markdown-toc").style.top;
+    // });
+
+    // document.onload = function(){
+    //   init_top = document.getElementById("markdown-toc").style.top;
+    // };
+
+    
+      // function aaa(){
+      //   var head_height = $(".page-header").outerHeight() + $(".site-header").outerHeight();
+      //   if ($(document).scrollTop() < head_height)
+      //     $("#markdown-toc").css("top", head_height-$(document).scrollTop() + "px");
+      //   else
+      //     $("#markdown-toc").css("top", "0px");
+
+      //   return $("#markdown-toc").css("top");
+      //   // if(window.scrollY < 200){
+      //   //   document.getElementById("markdown-toc").style.top = init_top - window.scrollY;
+      //   // }
+      //   // return document.getElementById("markdown-toc").style.top;
+        
+      //   //   document.getElementById("markdown-toc").style.top = "fixed";
+      //   // else
+      //   //   document.getElementById("markdown-toc").className = "";
+      // }
+  </script>
 </article>

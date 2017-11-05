@@ -169,7 +169,7 @@ a {
   }
 
   @include large {
-    max-width: 65rem;
+    max-width: 75rem;
     padding: 3rem 6rem;
     margin: 0 auto;
     font-size: 1rem;
@@ -432,4 +432,65 @@ a {
 
   } // social-icons
 
+}
+
+.post-widget{
+  float: right;
+  width: 20%;
+  padding-left: 30px;
+  min-height: 1px;
+}
+
+.post-article{
+  // 不知道为什么加了这一行就会出现一条横线
+  //float: left;
+  padding-right: 30px;
+
+  @include large{
+    width: 80%;
+  }
+
+  @include medium{
+    width: 80%;
+  }
+
+  @include small{
+    width: 100%;
+  }
+}
+
+ul#markdown-toc{
+  bottom: 140px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  width: 20%;
+
+  // @include medium{
+  //   display: none;
+  // }
+
+  @include small{
+    display: none;
+  }
+}
+
+ul#markdown-toc li{
+  list-style: none;
+}
+
+ul#markdown-toc a{
+  font-weight: lighter;
+  line-height: 1.5rem;
+  color: #319b66;
+  word-break: break-all;
+}
+
+ul#markdown-toc ul{
+  padding-left: 20px;
+}
+
+ul#markdown-toc a:hover{
+  font-weight: 600;
+  // color: #5edb45;
 }
