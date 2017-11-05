@@ -63,7 +63,7 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
 
 - Deep Q Network 
     - [Playing Atari with Deep Reinforcement Learning][26]
-    - Human-level control through deep reinforcement learning
+    - [Human-level control through deep reinforcement learning][27]
     - Demo 1 : Flappy Bird
     - Tutorial : OpenAI-gym tutorial
     - Demo 2 : Atari Game
@@ -126,3 +126,4 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
   [24]: {{ site.BASE_PATH }}/2017/11/02/intro-to-rl.html
   [25]: https://zhuanlan.zhihu.com/rl-tutorial
   [26]: {{ site.BASE_PATH }}/2017/11/03/Note-Playing-Atari-with-Deep-Reinforcement-Learning.html
+  [27]: {{ site.BASE_PATH }}/2017/11/04/Note-Human-level-control-through-deep-reinforcement-learning.html
