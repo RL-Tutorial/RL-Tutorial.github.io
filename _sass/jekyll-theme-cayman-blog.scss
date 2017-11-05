@@ -444,14 +444,15 @@ a {
 .post-article{
   // 不知道为什么加了这一行就会出现一条横线
   //float: left;
-  padding-right: 30px;
 
   @include large{
     width: 80%;
+    padding-right: 30px;
   }
 
   @include medium{
     width: 80%;
+    padding-right: 30px;
   }
 
   @include small{
@@ -493,4 +494,29 @@ ul#markdown-toc ul{
 ul#markdown-toc a:hover{
   font-weight: 600;
   // color: #5edb45;
+}
+
+// chrome下的滚动条
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 8px;
+	height: 8px
+}
+
+::-webkit-scrollbar-track {
+	background-color: inherit
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #bdffbd; 
+	border: 1px solid #fff;
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a4ffa4;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: #8aff8a;
 }

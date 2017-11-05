@@ -29,9 +29,11 @@ layout: default
     var $article = $("article");
     var $aside = $("aside");
     var $toc = $("#markdown-toc");
-    var init_top = 11;
+    var init_top = 60;
 
     function set_toc_position(){
+      if($toc.length <= 0)
+        return;
       var head_height = $(".page-header").outerHeight() + $(".site-header").outerHeight();
       if ($document.scrollTop() < head_height)
         $toc.css("top", head_height - $document.scrollTop() + init_top + "px");
@@ -44,11 +46,19 @@ layout: default
     });
 
     $document.ready(function(){
-      // jekyll生成的目录似乎只能写在正文里面
-      $toc.remove();
-      $aside.append($toc);
+      if($toc.length > 0){
+        // jekyll生成的目录似乎只能写在正文里面
+        $toc.remove();
+        $aside.append($toc);
 
-      set_toc_position();
+        set_toc_position();
+      }
+      else{
+        $article.css("padding-right", "0px");
+        $article.css("margin", "0 auto");
+      }
+      
+      
     });
 
     $document.scroll(function(){
