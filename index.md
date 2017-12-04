@@ -92,7 +92,7 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
 
 - Value-based
     - (DQN) Deep Q Network 
-        - Playing Atari with Deep Reinforcement Learning
+        - [Playing Atari with Deep Reinforcement Learning][34]
         - Human-level control through deep reinforcement learning
         - Demo 1 : Flappy Bird
         - Tutorial : OpenAI-gym tutorial
@@ -121,7 +121,6 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
 
 
 
-  [33]: {{ site.BASE_PATH }}/2017/11/02/intro-to-rl.html
 
 
   [1]: http://cs229.stanford.edu/section/cs229-linalg.pdf
@@ -156,3 +155,5 @@ This website serves as the guide and introduction to (Deep) Reinforcement Learni
   [30]: https://mila.quebec/en/cours/deep-learning-summer-school-2017/
   [31]: https://zhuanlan.zhihu.com/p/28922147
   [32]: https://zhuanlan.zhihu.com/rl-tutorial
+  [33]: {{ site.BASE_PATH }}/2017/11/02/intro-to-rl.html
+  [34]: {{ site.BASE_PATH }}/2017/12/03/dqn.html
